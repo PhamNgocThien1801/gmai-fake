@@ -1,0 +1,46 @@
+body {
+    display: flex;
+}
+.navbar {
+    width: 5%;
+    height: 100px;
+    display: flex;
+    background-color: brown;
+}
+.right-content {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    flex-direction: column;
+}
+/* search bar */
+.right-content .search-bar {
+    background-color: #ccc;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+/* logo */
+.right-content .search-bar .logo {
+    width: 20%;
+    height: 100%;
+    background-color: blueviolet;
+}
+/* search-box */
+.right-content .search-bar .search-box {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(20, 223, 125);
+}
+/* option */
+.right-content .search-bar .option {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(42, 0, 254);
+}
+/* content */
+.right-content .content {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
