@@ -3,44 +3,169 @@ body {
 }
 .navbar {
     width: 5%;
-    height: 100px;
+    height: 600px;
     display: flex;
-    background-color: brown;
+    /* background-color: brown; */
+}
+.navbar .option {
+    list-style: none;
+    padding-left: 0px;
+}
+.navbar .option li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0px auto;
+}
+.navbar .option i {
+    font-size: 20px;
+    margin: 0px auto 0px auto;
+}
+.navbar .option span{
+    padding-left: 0px;
 }
 .right-content {
     display: flex;
     width: 95%;
-    height: 100px;
+    height: 600px;
     flex-direction: column;
 }
 /* search bar */
 .right-content .search-bar {
-    background-color: #ccc;
+    /* background-color: #ccc; */
     width: 100%;
-    height: 100px;
+    height: 50px;
     display: flex;
 }
 /* logo */
 .right-content .search-bar .logo {
     width: 20%;
     height: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+}
+.right-content .search-bar .logo img{
+    width: 50%;
+    height: 100%;
 }
 /* search-box */
 .right-content .search-bar .search-box {
-    width: 50%;
+    width: 45%;
     height: 100%;
-    background-color: rgb(20, 223, 125);
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: rgb(20, 223, 125); */
+}
+.right-content .search-bar .search-box i{
+    position: absolute;
+    padding-left: 20px;
+}
+.right-content .search-bar .search-box input {
+    width: 90%;
+    height: 70%;
+    padding: 0 20px 0 40px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+    background-color: #fff;
 }
 /* option */
 .right-content .search-bar .option {
     width: 30%;
     height: 100%;
-    background-color: rgb(42, 0, 254);
+    display: flex;
+}
+.right-content .search-bar .option .status-active {
+    width: 30%;
+    height: 80%;
+    margin: auto 0px auto 5px;
+}
+.right-content .search-bar .option .status-active button {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.right-content .search-bar .option .status-active button i {
+    color: green;
+}
+.right-content .search-bar .option .option-content {
+    width: 30%;
+    display: flex;
+}
+.right-content .search-bar .option .option-content ul {
+    display: flex;
+    list-style: none;
+    padding-left: 5px;
+}
+.right-content .search-bar .option .option-content li {
+    display: flex;
+    list-style: none;
+    margin: 0px 5px 0px 5px;
+}
+.right-content .search-bar .option .avatar {
+    display: flex;
+    background-color: #fff;
+    width: 40%;
+    margin-right: 5px;
+    border: #000 solid 1px;
+}
+.right-content .search-bar .option .avatar .logo-fpt {
+    display: flex;
+    background-color: #fff;
+    width: 70%;
+    margin-right: 5px;
+}
+.right-content .search-bar .option .avatar .avatar-user {
+    border-radius: 50%;
+    width: 30%;
 }
 /* content */
 .right-content .content {
     width: 100%;
-    height: 100px;
+    height: 550px;
     background-color: aqua;
+    display: flex;
+}
+.right-content .content .navbar-content {
+    width: 20%;
+    height: auto;
+    background-color: burlywood;
+}
+.right-content .content .navbar-content button {
+    height: 50px;
+    width: 50%;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 10px 0px 0px 10px;
+}
+.right-content .content .navbar-content ul {
+    list-style: none;
+    padding-left: 10px;
+}
+.right-content .content .navbar-content li {
+    width: 90%;
+    height: 20px;
+    background-color: #fff;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+.right-content .content .navbar-content .label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+.right-content .content .navbar-content .label i{
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+.right-content .content .email-content {
+    width: 90%;
+}
+.right-content .content .email-content ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.right-content .content .email-content li{
+    width: 95%;
+    height: 30px;
+    background-color: #fff;
+    margin: 10px 0px 0px 10px;
 }
