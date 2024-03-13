@@ -1,0 +1,11 @@
+luu y viec set padding cho ca component cha khoong set cho rieng tung component con
+tat ca nhung cho selected tu first-child thanh selected
+border radius nen toi uu su dung div boc ngoai
+trong content chi su dung email conent la ul li 2 cai con lai doi thanh div
+khong duoc over write lai cai class cua thu vien thu 3 ma phai tao them class cho no
+khong duoc de duplicate code
+
+thieu hover navbar , thieu so 99+
+font phai duoc config dau tien
+thanh option cuar email content mau trang
+thieu line giua cac mail
