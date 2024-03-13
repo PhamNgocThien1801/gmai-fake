@@ -5,7 +5,7 @@ body {
 }
 .navbar {
     width: 68px;
-    height: 1000px;
+    height: auto;
     display: flex;
     background-color: #E9F1FB;
     /* background-color: brown; */
@@ -228,11 +228,20 @@ body {
 .right-content .content .email-content li:last-child{
     background-color: #fff;
     height: 40px;
-    padding: 16px;
+    padding: 16px 0px 16px 0px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     color: #5f6368;
+    margin-left: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+.right-content .content .email-content li:last-child .using-memory{
+    padding-left: 16px;
+}
+.right-content .content .email-content li:last-child .details{
+    text-align: end;
+    padding-right: 16px;
 }
 .right-content .content .email-content li{
     width: 100%;
