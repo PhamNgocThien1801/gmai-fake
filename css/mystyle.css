@@ -20,14 +20,29 @@ body {
 .navbar .option li .hamberger-button {
     font-size: 22px;
 }
-.navbar .option li .active-navbar {
+
+.navbar .option .first-option i{
+    margin-top: 18px;
     background-color: #d3e3fd;
     border-radius: 50%;
     width: 44px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.navbar .option .first-option{
-    padding-top: 18px;
+.navbar .option .first-option i div {
+    background-color: #b3261e;
+    position: absolute;
+    bottom: 16px;
+    left: 22px;
+    font-size: 11px;
+    color:#fff;
+    padding: 1px 4px;
+    font-family: Google Sans;
+    border : 2px solid #b3261e;
+    border-radius: 20px;
 }
 .navbar .option li {
     display: flex;
@@ -39,17 +54,17 @@ body {
     font-size: 16px;
     margin: 0px auto 0px auto;
 }
-.navbar .option span{
+.navbar .option p{
     padding-left: 0px;
     color: #1f1f1f;
     font-weight: 500;
     line-height: 16px;
-    margin-top: 12px;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 6px 0px 6px 0px;
 }
 .right-content {
     display: flex;
-    width: 94%;
+    width: 95%;
     height: 600px;
     flex-direction: column;
 }
@@ -136,16 +151,41 @@ body {
 .right-content .search-bar .option .option-content ul {
     display: flex;
     list-style: none;
-    padding-left: 5px;
+    padding: 0px 5px;
     width: 100%;
+    margin: 10px 0px;
 }
 .right-content .search-bar .option .option-content li {
-    display: flex;
     list-style: none;
     width: 40px;
+    height: 40px;
     margin: 0px 5px 0px 5px;
     font-size: 20px;
     color: gray;
+    position: relative;
+}
+.right-content .search-bar .option .option-content li i {
+    padding: 8px;
+    border-radius: 50%;
+}
+.right-content .search-bar .option .option-content li i:hover {
+    background-color: #E8EAED;
+}
+.right-content .search-bar .option .option-content li .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(43, 42, 42);
+    color: #fff;    
+    padding: 2px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    top: 120%;
+    left: -20%;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.right-content .search-bar .option .option-content li:hover .tooltiptext {
+    visibility: visible;
 }
 .right-content .search-bar .option .avatar {
     display: flex;
@@ -174,10 +214,12 @@ body {
     width: 100%;
     height: 550px;
     /* background-color: aqua; */
-    display: flex;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+
 }
 .right-content .content .navbar-content {
-    width: 256px !important;
+    width: 256px ;
     height: auto;
 }
 .right-content .content .navbar-content button {
@@ -217,26 +259,33 @@ body {
 .right-content .content .navbar-content .label {
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 26px;
 }
 .right-content .content .navbar-content .label i{
     margin-top: auto;
     margin-bottom: auto;    
 }
 .right-content .content .email-content {
-    width: auto;
+    flex-grow: 1;
 }
 .right-content .content .email-content ul{
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-}
-.right-content .content .email-content li:first-child{
-    margin: 0px;
-    border-radius: 20px 20px 0px 0px;
-}
-.right-content .content .email-content li:last-child{
     background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+}
+.right-content .content .email-content .email-option{
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0px 10px 18px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.right-content .content .email-content .email-footer{
     height: 40px;
     padding: 16px 0px 16px 0px;
     display: flex;
@@ -246,12 +295,12 @@ body {
     margin-left: auto;
     border-radius: 0px 0px 20px 20px;
 }
-.right-content .content .email-content li:last-child .using-memory{
+.right-content .content .email-content .email-footer .using-memory{
     padding-left: 16px;
 }
-.right-content .content .email-content li:last-child .details{
+.right-content .content .email-content .email-footer .details{
     text-align: end;
-    padding-right: 16px;
+    margin-right: 16px;
 }
 .right-content .content .email-content li{
     width: 100%;
@@ -261,8 +310,15 @@ body {
     display: flex;
     align-items: center;
     white-space: nowrap;
-}
+    border-bottom: #e1e5e9 solid 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
+}
+.right-content .content .email-content li input {
+    margin-left: 30px;
+}
 .right-content .content .email-content li i{
     margin: 0px 5px 0px 5px;
 }
@@ -288,37 +344,32 @@ body {
     color: #5e5e5e;
     width: auto;
 }
-.right-content .content .email-content li input:first-child{
+.right-content .content .email-content .email-option input{
     width: 14px;
     height: 14px;
-    margin: 0px 10px 0px 20px;
+    margin: 0px 10px 0px 10px;
 }
-.right-content .content .email-content li p{
+.right-content .content .email-content li Strong{
     /* margin: 0px 10px 0px 10px; */
     width: 168px;
 }
-.right-content .content .email-content li span{
-    /* margin: 0px 10px 0px 100px; */
+.right-content .content .email-content li p{
+    margin: 0px 10px 0px 10px;
 }
 .right-content .content .email-content li strong{
     margin: 0px 10px 0px 30px;
+    font-size: 12px;
 }
-.right-content .content .email-content li button{
+.right-content .content .email-content .email-option button{
     border-radius: 50%;
     width: 40px;
     height: 40px;
     border: none;
-    background-color: #F2F6FC;
+    background-color: #fff;
     color: #444;
 }
-.right-content .content .email-content li button:last-child{
-    margin: 0px 32px 0px 0px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #F2F6FC;
-    color: #444;
+.right-content .content .email-content .email-option button:last-child{
+    margin-right: 32px;
 }
 
 
