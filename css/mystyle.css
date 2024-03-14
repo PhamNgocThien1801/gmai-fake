@@ -1,14 +1,14 @@
 body {
     display: flex;
-    margin: 0px;
+    margin: 0rem;
     background-color: #F6F8FC;
     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     height: 100%;
-    overflow: hidden;
-    margin-right: 16px;
+    /* overflow: hidden; */
+    margin-right: 1rem;
 }
 .navbar {
-    width: 68px;
+    width: 5%;
     min-width: 68px;
     height: auto;
     display: flex;
@@ -17,20 +17,20 @@ body {
 }
 .navbar .option {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0rem;
     width: 100%;
-    margin: 0px;
+    margin: 0rem;
 }
 .navbar .option li .hamberger-button {
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .navbar .option .first-option i{
-    margin-top: 18px;
+    margin-top: 1.125rem;
     background-color: #d3e3fd;
     border-radius: 50%;
-    width: 44px;
-    height: 30px;
+    width: 2.75rem;
+    height: 1.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,90 +39,91 @@ body {
 .navbar .option .first-option i div {
     background-color: #b3261e;
     position: absolute;
-    bottom: 16px;
-    left: 22px;
-    font-size: 11px;
+    bottom: 1rem;
+    left: 1.375rem;
+    font-size: 0.688rem;
     color:#fff;
-    padding: 1px 4px;
+    padding: 0.063rem 0.25rem;
     font-family: Google Sans;
-    border : 2px solid #b3261e;
-    border-radius: 20px;
+    border : 0.125rem solid #b3261e;
+    border-radius: 1.25rem;
 }
 .navbar .option li {
     display: flex;
     flex-direction: column;
-    margin: 20px auto 0px auto;
+    margin: 1.25rem auto 0rem auto;
     text-align: center;
 }
 .navbar .option i {
-    font-size: 16px;
-    margin: 0px auto 0px auto;
+    font-size: 1rem;
+    margin: 0rem auto 0rem auto;
 }
 .navbar .option p{
-    padding-left: 0px;
+    padding-left: 0rem;
     color: #1f1f1f;
     font-weight: 500;
-    line-height: 16px;
-    font-size: 12px;
-    margin: 6px 0px 6px 0px;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    margin: 0.375rem 0rem 0.375rem 0rem;
 }
 .right-content {
     /* display: flex; */
-    width: 100%;
-    height: 600px;
+    width: 95%;
+    height: 37.5rem;
     /* flex-direction: column; */
 }
 /* search bar */
 .right-content .search-bar {
     /* background-color: #ccc; */
     width: 100%;
-    height: 48px;
+    height: 3rem;
     display: flex;
-    padding: 8px 0px 8px 0px;
+    padding: 0.5rem 0rem;
 
 }
 /* logo */
 .right-content .search-bar .logo {
-    width: auto;
+    width: 18%;
+    min-width: 256px;
     height: 100%;
-    padding-left: 2%;
+    margin-left: 2%;
     /* background-color: blueviolet; */
 }
 .right-content .search-bar .logo img{
-    width: 109px;
-    height: 40px;
-    padding-right: 30px;
+    width: 6.813rem;
+    height: 2.5rem;
+    padding-right: 1.875rem;
 }
 /* search-box */
 .right-content .search-bar .search-box {
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: 68px;
-    padding: 0px 30px 0px 10px;
+    margin-left: 0rem;
+    padding: 0rem 1.875rem 0rem 0.625rem;
     /* background-color: rgb(20, 223, 125); */
 }
 .right-content .search-bar .search-box i{
     position: absolute;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 .right-content .search-bar .search-box input {
     width: 100%;
     height: 100%;
-    padding: 0 20px 0 45px;
-    margin: 5px 30px 0px 0px;
+    padding: 0 1.25rem 0 2.813rem;
+    margin: 0.313rem 1.875rem 0rem 0rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: #EAF1FB;
 }
 .right-content .search-bar .search-box input::placeholder {
-    font-size: 16px;
+    font-size: 1rem;
 }
 /* option */
 .right-content .search-bar .option {
-    width: 35%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -130,47 +131,47 @@ body {
 .right-content .search-bar .option .status-active {
     width: 30%;
     height: 100%;
-    margin: auto 0px auto 5px;
+    margin: auto 0rem auto 5px;
 }
 .right-content .search-bar .option .status-active button {
     width: 101px;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     border: none;
     background-color: #E4ECF8;
-    margin: 0px 18px 0px 0px;
+    margin-top: 0rem;
 }
 .right-content .search-bar .option .status-active button i:first-child {
     color: green;
-    font-size: 12px;
-    padding: 0px 4px 0px 4px;
+    font-size: 0.75rem;
+    padding: 0rem 0.25rem;
 }
 .right-content .search-bar .option .status-active button i {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .right-content .search-bar .option .option-content {
-    width: 160px;
+    width: 10rem;
     display: flex;
 }
 .right-content .search-bar .option .option-content ul {
     display: flex;
     list-style: none;
-    padding: 0px 5px;
+    padding: 0rem 0.313rem;
     width: 100%;
-    margin: 10px 0px;
+    margin: 0.625rem 0rem;
 }
 .right-content .search-bar .option .option-content li {
     list-style: none;
-    width: 40px;
-    height: 40px;
-    margin: 0px 5px 0px 5px;
-    font-size: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0rem 5px 0rem 5px;
+    font-size: 1.25rem;
     color: gray;
     position: relative;
 }
 .right-content .search-bar .option .option-content li i {
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 50%;
 }
 .right-content .search-bar .option .option-content li i:hover {
@@ -181,12 +182,12 @@ body {
     position: absolute;
     background-color: rgb(43, 42, 42);
     color: #fff;    
-    padding: 2px 10px;
-    border-radius: 5px;
+    padding: 0.125rem 0.625rem;
+    border-radius: 0.313rem;
     z-index: 1;
     top: 120%;
     left: -20%;
-    font-size: 14px;
+    font-size: 0.875rem;
     white-space: nowrap;
 }
 .right-content .search-bar .option .option-content li:hover .tooltiptext {
@@ -194,62 +195,61 @@ body {
 }
 .right-content .search-bar .option .avatar {
     display: flex;
-    width: 134px;
+    width: 8.375rem;
     height: 100%;
     border: rgb(230, 222, 222) solid 1px;
-    border-radius: 8px;
-    margin: auto 0px auto 0px;
+    border-radius: 0.5rem;
+    margin: auto 0rem auto 0rem;
 }
 .right-content .search-bar .option .avatar .logo-fpt {
     display: flex;
-    width: 90px;
-    height: 32px;
-    margin: auto 0px auto 0px;
+    width: 5.625rem;
+    height: 2rem;
+    margin: auto 0rem auto 0rem;
 }
 .right-content .search-bar .option .avatar .avatar-user {
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     align-items: center;
-    padding: 4px;
-    margin: auto 0px auto 0px;
+    padding: 0.25rem;
+    margin: auto 0rem auto 0rem;
 }
 /* content */
 .right-content .content {
     width: 100%;
-    height: 550px;
+    height: 34.375rem;
     display: flex;
     /* background-color: aqua; */
     /* display: grid;
     grid-template-columns: 256px 1fr; */
-
 }
 .right-content .content .navbar-content {
-    width: 256px ;
+    width: 20%;
     min-width: 256px;
     height: auto;
 }
 .right-content .content .navbar-content button {
-    height: 56px;
-    width: 138px;
+    height: 3.5rem;
+    width: 8.625rem;
     background-color: #C1E7FF;
-    border-radius: 15px;
-    margin: 10px 0px 0px 10px;
+    border-radius: 0.938rem;
+    margin: 0.625rem 0rem 0rem 0.625rem;
     border: none;
     font-weight: 500;
 }
 .right-content .content .navbar-content button i{
-    font-size: 16px;
-    margin-right: 12px;
+    font-size: 1rem;
+    margin-right: 0.75rem;
 }
 .right-content .content .navbar-content ul {
     list-style: none;
-    padding: 0px 8px 0px 10px;
+    padding: 0rem 0.5rem 0rem 0.625rem;
 }
 .right-content .content .navbar-content li {
     width: auto;
-    height: 32px;
-    border-radius: 15px;
+    height: 2rem;
+    border-radius: 0.938rem;
     display: flex;
     align-items: center;
 }
@@ -257,16 +257,16 @@ body {
     background-color: #D3E3FD;
 }
 .right-content .content .navbar-content li i{
-    padding: 0px 12px 0px 16px;
+    padding: 0rem 0.75rem 0rem 1rem;
 }
 .right-content .content .navbar-content li strong{
-    margin: 0px 12px 0px auto;
-    font-size: 12px;
+    margin: 0rem 0.75rem 0rem auto;
+    font-size: 0.75rem;
 }
 .right-content .content .navbar-content .label {
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px 0px 26px;
+    padding: 0rem 0.625rem 0rem 1.625rem;
 }
 .right-content .content .navbar-content .label i{
     margin-top: auto;
@@ -274,113 +274,126 @@ body {
 }
 .right-content .content .email-content {
     flex-grow: 1;
+    width: 80%;
 }
 .right-content .content .email-content ul{
     list-style: none;
-    padding-left: 0px;
-    margin: 0px;
+    padding-left: 0rem;
+    margin: 0rem;
     background-color: #fff;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
     overflow: auto;
-    height: 600px;
+    height: 37.5rem;
 }
 .right-content .content .email-content .email-option{
-    margin: 0px;
+    margin: 0rem;
     /* width: 98%; */
-    height: 20px;
-    padding: 10px 40px 10px 18px;
-    /* margin-right: 20px; */
+    height: 1.25rem;
+    padding: 0.625rem 2.5rem 0.625rem 1.125rem;
+    /* margin-right: 20rem; */
     display: flex;
     align-items: center;
     /* white-space: nowrap; */
     /* background-color: red; */
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
     background-color: #fff;
 }
 .right-content .content .email-content .email-footer{
-    height: 40px;
-    padding: 16px 0px 16px 0px;
+    height: 2.5rem;
+    padding: 1rem 0rem 1rem 0rem;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #5f6368;
     margin-left: auto;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0rem 0rem 1.25 1.25rem;
 }
 .right-content .content .email-content .email-footer .using-memory{
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 .right-content .content .email-content .email-footer .details{
     text-align: end;
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 .right-content .content .email-content li{
     width: 100%;
-    height: 20px;
+    height: 1.25rem;
     background-color: #F2F6FC;
-    padding: 10px 0px 10px 0px;
+    padding: 0.625rem 0rem;
     display: flex;
     align-items: center;
     border-bottom: #e1e5e9 solid 1px;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 .right-content .content .email-content li span {
+    /* white-space: nowrap; */
+    /* width: 100%; */
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
+
+
 }
 .right-content .content .email-content li input {
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 .right-content .content .email-content li i{
-    margin: 0px 5px 0px 5px;
+    margin: 0rem 0.313rem;
 }
 .right-content .content .email-content .name-email {
-    width: 168px;
-    margin-right: 32px;
+    width: 10.5rem;
+    margin-right: 2rem;
 }
 .right-content .content .email-content .fa-caret-down {
-    font-size: 10px;
-    margin-right: 30px;
+    font-size: 0.625rem;
+    margin-right: 1.875rem;
 }
 .right-content .content .email-content .fa-arrow-rotate-right {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #444746;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 .right-content .content .email-content .fa-arrow-rotate-right {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #444746;
 }
 .right-content .content .email-content .fa-star {
-    margin: 0px 10px 0px 15px;
+    margin: 0rem 0.625rem 0rem 0.938rem;
 }
 .right-content .content .email-content .pagination{
-    margin: 0px 5px 0px auto;    
-    font-size: 12px;
+    margin: 0rem 0.313rem 0rem auto;    
+    font-size: 0.75rem;
     color: #5e5e5e;
     width: auto;
 }
 .right-content .content .email-content .email-option input{
     width: 14px;
     height: 14px;
-    margin: 0px 10px 0px 10px;
+    margin: 0rem 0.625rem 0rem 0.625rem;
 }
 .right-content .content .email-content li p{
-    margin: 0px 10px 0px 10px;
+    margin: 0rem 0.625rem 0rem 0.625rem;
 }
 .right-content .content .email-content li strong{
-    margin: 0px 10px 0px 30px;
-    font-size: 12px;
-    width: 72px;
+    margin: 0rem 0.625rem 0rem 1.875rem;
+    font-size: 0.75rem;
+    width: 4.5rem;
 }
 .right-content .content .email-content .email-option button{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border: none;
     background-color: #fff;
     color: #444;
 }
 .right-content .content .email-content .email-option button:last-child{
-    margin-right: 32px;
+    margin-right: 2rem;
+}
+.right-content .white-space p{
+    width: 6.25rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
