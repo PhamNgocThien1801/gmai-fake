@@ -3,9 +3,13 @@ body {
     margin: 0px;
     background-color: #F6F8FC;
     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 16px;
 }
 .navbar {
     width: 68px;
+    min-width: 68px;
     height: auto;
     display: flex;
     background-color: #E9F1FB;
@@ -63,10 +67,10 @@ body {
     margin: 6px 0px 6px 0px;
 }
 .right-content {
-    display: flex;
-    width: 95%;
+    /* display: flex; */
+    width: 100%;
     height: 600px;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 /* search bar */
 .right-content .search-bar {
@@ -121,6 +125,7 @@ body {
     width: 35%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .right-content .search-bar .option .status-active {
     width: 30%;
@@ -197,7 +202,7 @@ body {
 }
 .right-content .search-bar .option .avatar .logo-fpt {
     display: flex;
-    width: 78px;
+    width: 90px;
     height: 32px;
     margin: auto 0px auto 0px;
 }
@@ -213,13 +218,15 @@ body {
 .right-content .content {
     width: 100%;
     height: 550px;
+    display: flex;
     /* background-color: aqua; */
-    display: grid;
-    grid-template-columns: 256px 1fr;
+    /* display: grid;
+    grid-template-columns: 256px 1fr; */
 
 }
 .right-content .content .navbar-content {
     width: 256px ;
+    min-width: 256px;
     height: auto;
 }
 .right-content .content .navbar-content button {
@@ -273,17 +280,22 @@ body {
     padding-left: 0px;
     margin: 0px;
     background-color: #fff;
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    overflow: auto;
+    height: 600px;
 }
 .right-content .content .email-content .email-option{
     margin: 0px;
-    width: 100%;
+    /* width: 98%; */
     height: 20px;
-    padding: 10px 0px 10px 18px;
+    padding: 10px 40px 10px 18px;
+    /* margin-right: 20px; */
     display: flex;
     align-items: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    /* background-color: red; */
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fff;
 }
 .right-content .content .email-content .email-footer{
     height: 40px;
@@ -300,7 +312,7 @@ body {
 }
 .right-content .content .email-content .email-footer .details{
     text-align: end;
-    margin-right: 16px;
+    padding-right: 16px;
 }
 .right-content .content .email-content li{
     width: 100%;
@@ -309,18 +321,22 @@ body {
     padding: 10px 0px 10px 0px;
     display: flex;
     align-items: center;
-    white-space: nowrap;
     border-bottom: #e1e5e9 solid 1px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
+}
+.right-content .content .email-content li span {
+    white-space: nowrap;
 }
 .right-content .content .email-content li input {
     margin-left: 30px;
 }
 .right-content .content .email-content li i{
     margin: 0px 5px 0px 5px;
+}
+.right-content .content .email-content .name-email {
+    width: 168px;
+    margin-right: 32px;
 }
 .right-content .content .email-content .fa-caret-down {
     font-size: 10px;
@@ -349,16 +365,13 @@ body {
     height: 14px;
     margin: 0px 10px 0px 10px;
 }
-.right-content .content .email-content li Strong{
-    /* margin: 0px 10px 0px 10px; */
-    width: 168px;
-}
 .right-content .content .email-content li p{
     margin: 0px 10px 0px 10px;
 }
 .right-content .content .email-content li strong{
     margin: 0px 10px 0px 30px;
     font-size: 12px;
+    width: 72px;
 }
 .right-content .content .email-content .email-option button{
     border-radius: 50%;
@@ -371,5 +384,3 @@ body {
 .right-content .content .email-content .email-option button:last-child{
     margin-right: 32px;
 }
-
-
