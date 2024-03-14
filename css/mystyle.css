@@ -4,9 +4,10 @@ body {
     background-color: #F6F8FC;
     font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-right: 1rem;
 }
+/* #EAEBEF */
 .navbar {
     width: 5%;
     min-width: 68px;
@@ -24,17 +25,29 @@ body {
 .navbar .option li .hamberger-button {
     font-size: 1.375rem;
 }
-
 .navbar .option .first-option i{
     margin-top: 1.125rem;
     background-color: #d3e3fd;
-    border-radius: 50%;
+    border-radius: 35%;
     width: 2.75rem;
     height: 1.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.navbar .option .option-content i{
+    border-radius: 35%;
+    width: 2.75rem;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navbar .option .option-content i:hover {
+    background-color: #EAEBEF;
 }
 .navbar .option .first-option i div {
     background-color: #b3261e;
@@ -78,15 +91,15 @@ body {
     width: 100%;
     height: 3rem;
     display: flex;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
 
 }
 /* logo */
 .right-content .search-bar .logo {
-    width: 18%;
+    width: 20%;
     min-width: 256px;
     height: 100%;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     /* background-color: blueviolet; */
 }
 .right-content .search-bar .logo img{
@@ -96,13 +109,13 @@ body {
 }
 /* search-box */
 .right-content .search-bar .search-box {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     position: relative;
     margin-left: 0rem;
-    padding: 0rem 1.875rem 0rem 0.625rem;
+    /* padding: 0rem 1.875rem 0rem 0.625rem; */
     /* background-color: rgb(20, 223, 125); */
 }
 .right-content .search-bar .search-box i{
@@ -113,28 +126,90 @@ body {
     width: 100%;
     height: 100%;
     padding: 0 1.25rem 0 2.813rem;
-    margin: 0.313rem 1.875rem 0rem 0rem;
+    /* margin: 0.313rem 1.875rem 0rem 0rem; */
     border: none;
     border-radius: 1.25rem;
     background-color: #EAF1FB;
 }
+.right-content .search-bar .search-box input:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 0px;
+}
+.right-content .search-bar .search-box input:focus +.table-search {
+    display: block;
+}
 .right-content .search-bar .search-box input::placeholder {
     font-size: 1rem;
 }
+.right-content .search-bar .search-box .table-search {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    display: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 20px 20px;
+}
+.right-content .search-bar .search-box .table-search .top-content {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    margin: auto 0px;
+    border-top: #e1e5e9 solid 1px;
+    border-bottom: #e1e5e9 solid 1px;
+}
+.right-content .search-bar .search-box .table-search .top-content button {
+    margin: 0px 8px ;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: #e1e5e9 solid 1px;
+    background-color: #fff;
+    font-size: 13px;
+}
+.right-content .search-bar .search-box .table-search .top-content button:hover {
+    background-color: #e7eaee;
+}
+.right-content .search-bar .search-box .table-search .bottom-content ul {
+    padding-left: 0px;
+}
+.right-content .search-bar .search-box .table-search .bottom-content li {
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+    padding: 8px;
+    border-left: white solid 2px;
+}
+.right-content .search-bar .search-box .table-search .bottom-content li:hover {
+    background-color: #F2F6FC;
+    border-left: rgb(103, 103, 235) solid 2px;
+}
+.right-content .search-bar .search-box .table-search .bottom-content .avatar-user {
+    width: 35px;
+    height: 35px;
+}
+.right-content .search-bar .search-box .table-search .bottom-content p {
+    margin: 0px;
+    padding-left: 16px;
+}
 /* option */
 .right-content .search-bar .option {
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 .right-content .search-bar .option .status-active {
     width: 30%;
     height: 100%;
+    min-width: 82px;
     margin: auto 0rem auto 5px;
+    display: flex;
+    justify-content: end;
 }
 .right-content .search-bar .option .status-active button {
-    width: 101px;
+    /* width: 101px; */
     height: 100%;
     border-radius: 1.563rem;
     border: none;
@@ -180,7 +255,7 @@ body {
 .right-content .search-bar .option .option-content li .tooltiptext {
     visibility: hidden;
     position: absolute;
-    background-color: rgb(43, 42, 42);
+    background-color: #444746;
     color: #fff;    
     padding: 0.125rem 0.625rem;
     border-radius: 0.313rem;
@@ -252,6 +327,10 @@ body {
     border-radius: 0.938rem;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.right-content .content .navbar-content li:hover {
+    background-color: #EAEBEF;
 }
 .right-content .content .navbar-content li:first-child {
     background-color: #D3E3FD;
@@ -262,6 +341,19 @@ body {
 .right-content .content .navbar-content li strong{
     margin: 0rem 0.75rem 0rem auto;
     font-size: 0.75rem;
+}
+.right-content .content .navbar-content li .text-tooltip {
+    position: absolute;
+    left: 100%;
+    background-color: #444746;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    visibility: hidden;
+}
+.right-content .content .navbar-content li:hover .text-tooltip {
+    visibility: visible;
 }
 .right-content .content .navbar-content .label {
     display: flex;
@@ -276,6 +368,36 @@ body {
     flex-grow: 1;
     width: 80%;
 }
+.right-content .content .email-content div .scrooll-icon {
+    padding: 10px 4px;
+    margin-right: 14px;
+}
+.right-content .content .email-content div .scrooll-icon:hover {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+.right-content .content .email-content div .arrow-icon {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 14px;
+}
+.right-content .content .email-content div .arrow-icon:hover {
+    background-color: #F2F2F2;
+}
+.right-content .content .email-content div .vertical-icon {
+    border-radius: 50%;
+    padding: 8px 14px;
+}
+.right-content .content .email-content div .vertical-icon:hover {
+    background-color: #F2F2F2;
+}
+.right-content .content .email-content div .pagination{
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.right-content .content .email-content div .pagination:hover{
+    background-color: #F2F2F2;
+}
 .right-content .content .email-content ul{
     list-style: none;
     padding-left: 0rem;
@@ -283,7 +405,7 @@ body {
     background-color: #fff;
     border-radius: 0rem 0rem 1.25rem 1.25rem;
     overflow: auto;
-    height: 37.5rem;
+    height: 28rem;
 }
 .right-content .content .email-content .email-option{
     margin: 0rem;
@@ -316,7 +438,7 @@ body {
     padding-right: 1rem;
 }
 .right-content .content .email-content li{
-    width: 100%;
+    width: 99%;
     height: 1.25rem;
     background-color: #F2F6FC;
     padding: 0.625rem 0rem;
@@ -324,6 +446,10 @@ body {
     align-items: center;
     border-bottom: #e1e5e9 solid 1px;
     overflow: hidden;
+
+}
+.right-content .content .email-content ul li:hover{
+    border: #DADCE0 solid 2px;
 }
 .right-content .content .email-content li span {
     /* white-space: nowrap; */
@@ -332,8 +458,6 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
-
 }
 .right-content .content .email-content li input {
     margin-left: 1.875rem;
@@ -370,7 +494,7 @@ body {
 .right-content .content .email-content .email-option input{
     width: 14px;
     height: 14px;
-    margin: 0rem 0.625rem 0rem 0.625rem;
+    margin: 0rem 2px 0rem 0.625rem;
 }
 .right-content .content .email-content li p{
     margin: 0rem 0.625rem 0rem 0.625rem;
@@ -379,17 +503,21 @@ body {
     margin: 0rem 0.625rem 0rem 1.875rem;
     font-size: 0.75rem;
     width: 4.5rem;
+    text-align: end;
 }
 .right-content .content .email-content .email-option button{
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border: none;
     background-color: #fff;
-    color: #444;
+    color: #AEB0AF;
 }
 .right-content .content .email-content .email-option button:last-child{
-    margin-right: 2rem;
+    color: #1f1f1f;
+}
+.right-content .content .email-content .email-option button:last-child:hover{
+    background-color: #F2F2F2;
 }
 .right-content .white-space p{
     width: 6.25rem;
