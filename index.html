@@ -14,7 +14,12 @@
         <div class="navbar">
             <ul class="option">
                 <!-- hamberger button -->
-                <li><i class="fa-solid fa-bars hamberger-button"></i></li>
+                <li>
+                    <label class="hamberger-label" for="hamberger-checkbox">
+                        <i class="fa-solid fa-bars hamberger-button"></i>
+                    </label>
+                    <input type="checkbox" id="hamberger-checkbox">
+                </li>
                 <!-- Mail button -->
                 <li class="first-option"><i class="fa-solid fa-envelope"><div><span>99+</span></div></i><p>Mail</p></li>
                 <!-- Chat button -->
@@ -134,26 +139,53 @@
                 </div>
                 <!-- email content -->
                 <div class="email-content">
-                    <div class="email-option"><input type="checkbox" class="check-box"><i class="fa-solid fa-caret-down scrooll-icon"></i><i class="fa-solid fa-arrow-rotate-right arrow-icon"></i><i class="fa-solid fa-ellipsis-vertical vertical-icon"></i></i><p class="pagination">1-50 of 1.932</p><button><i class="fa-solid fa-chevron-left"></i></button><button><i class="fa-solid fa-chevron-right"></i></button></div>
+                    <div class="email-option">
+                        <input type="checkbox" class="check-box">
+                        <i class="fa-solid fa-caret-down scrooll-icon">
+                            <div class="text-tooltip">Select</div>
+                        </i>
+                        <i class="fa-solid fa-arrow-rotate-right arrow-icon">
+                            <div class="text-tooltip">Refresh</div>
+                        </i>
+                        <i class="fa-solid fa-ellipsis-vertical vertical-icon">
+                            <div class="text-tooltip">More</div>
+                        </i>
+                        <div class="pagination"><p>1-50 of 1.932</p>
+                            <div class="pagination-option">
+                                <p class="newest-text">Newest</p>
+                                <p>Oldest</p>
+                            </div>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-chevron-left left-icon">
+                                <div class="text-tooltip-pagination">Newer</div>
+                            </i>
+                        </button>
+                        <button class="right-icon">
+                            <i class="fa-solid fa-chevron-right">
+                                <div class="text-tooltip-pagination">Older</div>
+                            </i>
+                        </button>
+                    </div>
                     <ul>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
-                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
+                        <li><input type="checkbox"><i class="fa-regular fa-star"></i><p class="name-email">Shopee</p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry standard dummy text ever since the 1500s</span> <strong>11 Mar</strong><div class="option-email-content"><i class="fa-solid fa-file-arrow-down"></i><i class="fa-regular fa-trash-can"></i><i class="fa-regular fa-envelope-open"></i><i class="fa-regular fa-clock"></i></div></li>
                         <div class="email-footer"><p class="using-memory">Using 0.5GB</p> <div><p>Programme Policies</p><p>Powered by Google</p></div> <div><p class="details">Last account activity: 13 hours ago</p><p class="details">Details</p></div></div>
                     </ul>
                 </div>

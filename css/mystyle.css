@@ -25,6 +25,13 @@ body {
 .navbar .option li .hamberger-button {
     font-size: 1.375rem;
 }
+.navbar .option input {
+    display: none;
+}
+#hamberger-checkbox:checked + .hamberger-label + .right-content .navbar-content {
+    width: 0px;
+    visibility: hidden;
+}
 .navbar .option .first-option i{
     margin-top: 1.125rem;
     background-color: #d3e3fd;
@@ -151,6 +158,7 @@ body {
     display: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 20px 20px;
+    z-index: 1;
 }
 .right-content .search-bar .search-box .table-search .top-content {
     height: 46px;
@@ -207,6 +215,9 @@ body {
     margin: auto 0rem auto 5px;
     display: flex;
     justify-content: end;
+}
+.right-content .search-bar .option .status-active button:hover {
+    background-color: #EAF1FB;
 }
 .right-content .search-bar .option .status-active button {
     /* width: 101px; */
@@ -371,6 +382,7 @@ body {
 .right-content .content .email-content div .scrooll-icon {
     padding: 10px 4px;
     margin-right: 14px;
+    position: relative;
 }
 .right-content .content .email-content div .scrooll-icon:hover {
     background-color: #F2F2F2;
@@ -380,6 +392,7 @@ body {
     border-radius: 50%;
     padding: 8px;
     margin-right: 14px;
+    position: relative;
 }
 .right-content .content .email-content div .arrow-icon:hover {
     background-color: #F2F2F2;
@@ -387,13 +400,41 @@ body {
 .right-content .content .email-content div .vertical-icon {
     border-radius: 50%;
     padding: 8px 14px;
+    position: relative;
 }
 .right-content .content .email-content div .vertical-icon:hover {
     background-color: #F2F2F2;
 }
 .right-content .content .email-content div .pagination{
-    padding: 8px 16px;
+    padding: 2px 16px;
     border-radius: 5px;
+    position: relative;
+}
+.right-content .content .email-content div .pagination:hover div{
+    visibility: visible;
+}
+.right-content .content .email-content div .pagination .pagination-option{
+    position: absolute;
+    background-color: #FFF;
+    width: 150%;
+    text-align: center;
+    left: 0%;
+    visibility: hidden;
+    z-index: 1;
+}
+.right-content .content .email-content div .pagination .pagination-option p{
+    margin: 0px;
+    height: 40px;
+    display: flex;
+    margin: auto 0px;
+    align-items: center;
+    justify-content: center;
+}
+.right-content .content .email-content div .pagination .pagination-option p:hover{
+    background-color: #F2F2F2;
+}
+.right-content .content .email-content div .pagination .pagination-option .newest-text{
+    color: #CCCCCC;
 }
 .right-content .content .email-content div .pagination:hover{
     background-color: #F2F2F2;
@@ -445,11 +486,40 @@ body {
     display: flex;
     align-items: center;
     border-bottom: #e1e5e9 solid 1px;
+    border-top : transparent solid 2px;
+    border-left: transparent solid 2px;
+    border-right: transparent solid 2px;
     overflow: hidden;
 
 }
 .right-content .content .email-content ul li:hover{
     border: #DADCE0 solid 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.right-content .content .email-content ul li:hover strong{
+    visibility: hidden;
+    width: 0px;
+}
+.right-content .content .email-content ul li:hover div i{
+    visibility: visible;
+    width: 2rem;
+}
+.right-content .content .email-content li .option-email-content{
+    display: flex;
+}
+.right-content .content .email-content li .option-email-content i{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    visibility: hidden;
+    width: 0px;
+}
+.right-content .content .email-content li .option-email-content i:hover{
+    background-color: #EAEBEF;
 }
 .right-content .content .email-content li span {
     /* white-space: nowrap; */
@@ -519,9 +589,45 @@ body {
 .right-content .content .email-content .email-option button:last-child:hover{
     background-color: #F2F2F2;
 }
-.right-content .white-space p{
-    width: 6.25rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.right-content .content .email-content .email-option .text-tooltip {
+    font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    position: absolute;
+    right: 0%; 
+    top: 100%; 
+    background-color: #444746;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.right-content .content .email-content .email-option .scrooll-icon:hover div {
+    visibility: visible;
+}
+.right-content .content .email-content .email-option .arrow-icon:hover div {
+    visibility: visible;
+}
+.right-content .content .email-content .email-option .vertical-icon:hover div {
+    visibility: visible;
+}
+.right-content .content .email-content .email-option .left-icon:hover div {
+    visibility: visible;
+}
+.right-content .content .email-content .email-option .text-tooltip-pagination {
+    font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    position: absolute;
+    background-color: #444746;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 5px;
+    top: 19%;
+    right: 3%;
+    visibility: hidden;
+}
+.right-content .content .email-content .email-option .left-icon:hover div {
+    visibility: visible;
+}
+.right-content .content .email-content .email-option .right-icon:hover div {
+    visibility: visible;
 }
