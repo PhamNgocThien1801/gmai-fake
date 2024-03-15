@@ -28,10 +28,10 @@ body {
 .navbar .option input {
     display: none;
 }
-#hamberger-checkbox:checked + .hamberger-label + .right-content .navbar-content {
+/* #hamberger-checkbox:checked + .hamberger-label + .right-content .navbar-content {
     width: 0px;
     visibility: hidden;
-}
+} */
 .navbar .option .first-option i{
     margin-top: 1.125rem;
     background-color: #d3e3fd;
@@ -215,6 +215,7 @@ body {
     margin: auto 0rem auto 5px;
     display: flex;
     justify-content: end;
+    position: relative;
 }
 .right-content .search-bar .option .status-active button:hover {
     background-color: #EAF1FB;
@@ -235,7 +236,78 @@ body {
 .right-content .search-bar .option .status-active button i {
     font-size: 0.625rem;
 }
-
+.right-content .search-bar .option .status-active .status-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 150%;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option {
+    display: flex;
+    height: 50px;
+    /* justify-content: space-between; */
+    padding: 0px 16px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option:hover {
+    background-color: #E8EAED;
+    border-bottom: #444746;
+}
+.right-content .search-bar .option .status-active .status-content .status-option i{
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option .circle-icon{
+    color: green;
+    margin-right: 16px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option .ban-icon{
+    color: red;
+    margin-right: 16px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option .away-icon{
+    margin-right: 16px;
+}
+.right-content .search-bar .option .status-active .status-content .status-action .pen-icon{
+    margin-right: 16px;
+}
+.right-content .search-bar .option .status-active .status-content .status-option .check-icon {
+    margin-left: auto;
+}
+.right-content .search-bar .option .status-active .status-content .status-option .status-option-content {
+    margin: auto 0px;
+}
+.right-content .search-bar .option .status-active .status-content .status-action{
+    display: flex;
+    height: 40px;
+    /* justify-content: space-between; */
+    padding: 0px 16px;
+    align-items: center;
+    border-top: #e1e5e9 solid 1px;
+    border-bottom: #e1e5e9 solid 1px;
+}
+.right-content .search-bar .option .status-active .status-content .status-action:hover {
+    background-color: #E8EAED;
+}
+/* .right-content .search-bar .option .status-active .status-content .status-option-content {
+    align-items: center;
+    display: flex;
+} */
+.right-content .search-bar .option .status-active .status-content p {
+    margin: 0px;
+}
+.right-content .search-bar .option .status-active .status-content p:first-child {
+    font-size: 16px;
+    color: black;
+}
+.right-content .search-bar .option .status-active .status-content .describe {
+    font-size: 12px;
+    color: #AEB0AF;
+}
 .right-content .search-bar .option .option-content {
     width: 10rem;
     display: flex;
@@ -631,3 +703,15 @@ body {
 .right-content .content .email-content .email-option .right-icon:hover div {
     visibility: visible;
 }
+#toggleStatus {
+    display: none;
+}
+
+#toggleStatus:checked ~ .status-content {
+    display: block;
+}
+
+#toggleStatus:not(:checked) ~ .status-content {
+    display: none;
+}
+

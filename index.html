@@ -10,15 +10,16 @@
         <link href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/regular.css" rel="stylesheet" />
     </head>
     <body>
+     
         <!-- navbar -->
         <div class="navbar">
             <ul class="option">
                 <!-- hamberger button -->
                 <li>
+                    <input type="checkbox" id="hamberger-checkbox">
                     <label class="hamberger-label" for="hamberger-checkbox">
                         <i class="fa-solid fa-bars hamberger-button"></i>
                     </label>
-                    <input type="checkbox" id="hamberger-checkbox">
                 </li>
                 <!-- Mail button -->
                 <li class="first-option"><i class="fa-solid fa-envelope"><div><span>99+</span></div></i><p>Mail</p></li>
@@ -95,8 +96,50 @@
                     <!-- status -->
                     <div class="status-active">
                         <!-- satus active -->
-                        <button><i class="fa-solid fa-circle"></i>Active <i class="fa-solid fa-angle-down"></i></button>
+                        <input type="checkbox" id="toggleStatus" >
+                        <button>
+                            <label class="toggleStatus" for="toggleStatus">
+                                <i class="fa-solid fa-circle"></i>Active <i class="fa-solid fa-angle-down"></i>
+                            </label>
+                        </button>
                         <!-- popover satus content -->
+                        <div class="status-content">
+                            <div class="status-option">
+                                <i class="fa-solid fa-circle circle-icon"></i>
+                                <div class="status-option-content">
+                                    <p>Automatic</p>
+                                    <p class="describe">Based on chat activity</p>
+                                </div>
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </div>
+                            <div class="status-option">
+                                <i class="fa-solid fa-ban ban-icon"></i>
+                                <div class="status-option-content">
+                                    <p>Do not disturb</p>
+                                    <p class="describe">Mute chat notifications</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-option">
+                                <i class="fa-regular fa-circle away-icon"></i>
+                                <div class="status-option-content">
+                                    <p class="describe">Set at Away</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="status-action">
+                                <i class="fa-solid fa-pen pen-icon"></i>
+                                <div class="status-option-content">
+                                    <p class="describe">Add a Status</p>
+                                </div>
+                            </div>
+                            <div class="status-option">
+                                <div class="status-option-content">
+                                    <p class="describe-action">Chat notification settings</p>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
                     </div>
                     <!-- option -->
                     <div class="option-content">
@@ -121,7 +164,7 @@
             <!-- content -->
             <div class="content">
                 <!-- navbar content -->
-                <div class="navbar-content">
+                <div class="navbar-content" id="navbar-content">
                     <button><i class="fa-solid fa-pen"></i> Compose</button>
                     <ul>
                         <li><i class="fa-solid fa-inbox"></i> Inbox <strong>194</strong><div class="text-tooltip">inbox</div></li>
