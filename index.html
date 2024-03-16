@@ -158,6 +158,32 @@
                         <img class="logo-fpt"src="./images/logo-fpt.png" alt="logo-fpt"/>
                         <img class="avatar-user" src="./images/user-img.jpg" alt="avatar"/>
                         <!-- popover -->
+                        <div class="popover" id="avatarPopover">
+                            <div class="name-user">
+                                <div class="user-infomation">
+                                    <div class="top-popover">
+                                        <div class="popover-top">
+                                                <p>thienpnse150137@fpt.edu.vn</p>
+                                                <p class="managed">Managed by fpt.edu.vn</p>
+                                        </div>
+                                    </div>
+                                    <div class="popover-bottom">
+                                        <img class="avatar-user" src="./images/user-img.jpg" alt="avatar"/>
+                                        <p>Hi, Pham Ngoc Thien!</p>
+                                        <button>Manage your Google accounts</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-account">
+                                <div class="add-account"><i class="fa-solid fa-plus"></i><p>add-account</p></div>
+                                <div class="sign-out"><i class="fa-solid fa-arrow-right-from-bracket"></i><p>sign-out</p></div>
+                            </div>
+                            <div class="policy">
+                                <div class="add-account"><p>Privacy policy</p></div>
+                                .
+                                <div class="sign-out"><p>Terms of service</p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,6 +260,16 @@
                 </div>
             </div>
         </div>
+        <script>const avatar = document.querySelector('.avatar');
+
+            // Get the popover element
+            const popover = document.querySelector('.popover');
+            
+            // Add click event listener to the avatar
+            avatar.addEventListener('click', function() {
+                // Toggle the 'active' class on the popover to show/hide it
+                popover.classList.toggle('active');
+            });</script>
     </body>
     <footer>
     </footer>

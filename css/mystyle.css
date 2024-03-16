@@ -358,6 +358,114 @@ body {
     border: rgb(230, 222, 222) solid 1px;
     border-radius: 0.5rem;
     margin: auto 0rem auto 0rem;
+    position: relative;
+}
+.right-content .search-bar .option .avatar .popover{
+    position: absolute;
+    right: 0%;
+    top: 130%;
+    z-index: 1;
+    background-color: #dde0e6;
+    width: 300%;
+    padding: 0px 16px;
+    border-radius: 20px;
+    z-index: 2;
+}
+.right-content .search-bar .option .avatar .popover .popover-top {
+    padding-top: 18px;
+}
+.right-content .search-bar .option .avatar .popover .popover-top p{
+    margin: 0;
+    font-size: 0.875rem;
+    text-align: center;
+}
+.right-content .search-bar .option .avatar .popover .popover-top .managed{
+    font-size: 0.75rem;
+}
+.right-content .search-bar .option .avatar .popover .avatar-user {
+    height: 80px;
+    width: 80px;
+    margin-top: 22px;
+}
+.right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom {
+    text-align: center;
+}
+.right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom p {
+    margin: 8px 0px;
+}
+.right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button {
+    margin: 1px 0px 18px 0px;
+    background-color: #dde0e6;
+    padding: 9px 23px;
+    border-radius: 100px;
+    border: 1px solid #747775;
+    color: #0b57d0;
+    font-size: 0.875rem;
+}
+.right-content .search-bar .option .avatar .popover .name-user .user-infomation .popover-bottom button:hover {
+    background-color: #e1e9f7;
+}
+.right-content .search-bar .option .avatar .popover .more-account{
+    display: flex;
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account,
+.right-content .search-bar .option .avatar .popover .more-account .sign-out {
+    width: 50%;
+    height: 58px;
+    padding: 0px 15px;
+    margin: 0px 1px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.right-content .search-bar .option .avatar .popover .policy {
+    display: flex;
+    align-items: center;
+}
+.right-content .search-bar .option .avatar .popover .policy .add-account,
+.right-content .search-bar .option .avatar .popover .policy .sign-out {
+    width: 50%;
+    height: 58px;
+    padding: 0px 15px;
+    margin: 0px 1px;
+    display: flex;
+    align-items: center; 
+}
+.right-content .search-bar .option .avatar .popover .policy .add-account{
+    justify-content: end;
+}
+.right-content .search-bar .option .avatar .popover .policy p:hover
+{
+    background-color: rgb(216, 210, 210);
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account i,
+.right-content .search-bar .option .avatar .popover .more-account .sign-out i{
+    font-size: 16px;
+    padding: 5px;    
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account p,
+.right-content .search-bar .option .avatar .popover .more-account .sign-out p{
+    margin-left: 8px;
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account {
+    border-radius: 100px 0px 0px 100px;
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account:hover {
+    background-color: #bebebe;
+}
+.right-content .search-bar .option .avatar .popover .more-account .add-account:hover i {
+    background-color: #fff;
+    border-radius: 50%;
+}
+.right-content .search-bar .option .avatar .popover .more-account .sign-out {
+    border-radius: 0px 100px 100px 0px;
+}
+.right-content .search-bar .option .avatar .popover .more-account .sign-out:hover {
+    background-color: #bebebe;
+}
+.right-content .search-bar .option .avatar .popover .policy {
+    text-align: center;
+    width: 100%;
 }
 .right-content .search-bar .option .avatar .logo-fpt {
     display: flex;
@@ -714,4 +822,10 @@ body {
 #toggleStatus:not(:checked) ~ .status-content {
     display: none;
 }
+.popover {
+    display: none;
+}
 
+.popover.active {
+    display: block;
+}
