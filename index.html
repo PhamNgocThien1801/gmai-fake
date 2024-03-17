@@ -260,16 +260,22 @@
                 </div>
             </div>
         </div>
-        <script>const avatar = document.querySelector('.avatar');
-
-            // Get the popover element
+        <script>
+            const avatar = document.querySelector('.avatar');
             const popover = document.querySelector('.popover');
-            
-            // Add click event listener to the avatar
             avatar.addEventListener('click', function() {
-                // Toggle the 'active' class on the popover to show/hide it
                 popover.classList.toggle('active');
-            });</script>
+            });
+            const hambergerCheckbox = document.getElementById('hamberger-checkbox');
+            const navbarContent = document.querySelector('.navbar-content');
+            hambergerCheckbox.addEventListener('change', function() {
+                if (hambergerCheckbox.checked) {
+                    navbarContent.style.display = 'none';
+                } else {
+                    navbarContent.style.display = 'block';
+                }
+            });
+        </script>
     </body>
     <footer>
     </footer>
